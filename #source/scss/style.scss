@@ -1,1 +1,59 @@
 @import "null.scss";
+
+@import url(https://fonts.googleapis.com/css?family=Outfit:regular,700);
+
+//----virables---/
+$White: hsl(0, 0%, 100%);
+$Light-gray: hsl(212, 45%, 89%);
+$Grayish-blue: hsl(220, 15%, 55%);
+$Dark-blue: hsl(218, 44%, 22%);
+
+body {
+	background-color: $Light-gray;
+}
+
+.QR-code {
+	margin: 152px auto auto;
+	width: 320px;
+	background: $White;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	border-radius: 15px;
+	padding: 16px;
+	font-family: outfit;
+	color: $Dark-blue;
+	text-align: center;
+
+	&__image {
+		width: 100%;
+		padding-bottom: 100%;
+		overflow: hidden;
+		position: relative;
+
+		margin: 0px 0px 1.5rem 0px;
+
+		img {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			max-width: 100%;
+
+			border-radius: 10px;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 1.39rem;
+		margin: 0px 0px 0.7em 0px;
+	}
+	&__text {
+		margin: 0 auto;
+		width: 90%;
+		color: $Grayish-blue;
+		font-size: 0.95rem;
+		margin-bottom: 1.5em;
+	}
+}
